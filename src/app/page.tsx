@@ -113,43 +113,61 @@ export default function Home() {
           </div>
           
           <div className="relative flex w-full gap-6 overflow-hidden">
-            <div className="flex w-max animate-[scroll_40s_linear_infinite] hover:[animation-play-state:paused] gap-6 px-4">
+            <div className="flex w-max animate-[scroll_50s_linear_infinite] hover:[animation-play-state:paused] gap-6 px-4">
               {[
-                { name: "Lucas M.", role: "Dono de Hamburgueria", text: "O sistema de delivery mudou meu faturamento. Em 5 dias o site estava no ar e lindo!" },
-                { name: "Mariana S.", role: "Arquiteta", text: "Meu portfólio ficou extremamente elegante e super rápido no celular. Suporte nota 10." },
-                { name: "Pedro A.", role: "CEO Agência M.", text: "Impressionante a agilidade no atendimento pelo chat exclusivo. Achei muito seguro." },
-                { name: "Juliana T.", role: "Dentista", text: "Meus pacientes elogiam muito a facilidade de agendar consulta pelo novo site. Recomendo!" },
-                { name: "Roberto C.", role: "E-commerce de Roupas", text: "As vendas triplicaram. Design limpo, focado em conversão e muito fácil de navegar." },
-                { name: "Camila F.", role: "Advogada", text: "O site passou muita credibilidade para o meu escritório. Serviço impecável." }
+                { name: "Lucas M.", role: "Dono de Hamburgueria", text: "O sistema de delivery mudou meu faturamento. Em 5 dias o site estava no ar e lindo!", avatar: "https://i.pravatar.cc/150?u=lucas" },
+                { name: "Mariana S.", role: "Arquiteta", text: "Meu portfólio ficou extremamente elegante e super rápido no celular. Suporte nota 10.", avatar: "https://i.pravatar.cc/150?u=mariana" },
+                { name: "Pedro A.", role: "CEO Agência M.", text: "Impressionante a agilidade no atendimento pelo chat exclusivo. Achei muito seguro.", avatar: "https://i.pravatar.cc/150?u=pedro" },
+                { name: "Juliana T.", role: "Dentista", text: "Meus pacientes elogiam muito a facilidade de agendar consulta pelo novo site. Recomendo!", avatar: "https://i.pravatar.cc/150?u=juliana" },
+                { name: "Roberto C.", role: "E-commerce de Roupas", text: "As vendas triplicaram. Design limpo, focado em conversão e muito fácil de navegar.", avatar: "https://i.pravatar.cc/150?u=roberto" },
+                { name: "Camila F.", role: "Advogada", text: "O site passou muita credibilidade para o meu escritório. Serviço impecável.", avatar: "https://i.pravatar.cc/150?u=camila" },
+                { name: "Thiago G.", role: "Personal Trainer", text: "Consegui lotar minha agenda! O site capta clientes automaticamente todos os dias.", avatar: "https://i.pravatar.cc/150?u=thiago" },
+                { name: "Amanda L.", role: "Dona de Salão", text: "Perfeito! A galera ama poder ver os serviços e marcar horário pelo próprio site.", avatar: "https://i.pravatar.cc/150?u=amanda" },
+                { name: "Ricardo N.", role: "Corretor de Imóveis", text: "Achei incrível o catálogo de imóveis. Fechei duas vendas no primeiro mês graças ao site.", avatar: "https://i.pravatar.cc/150?u=ricardo" },
+                { name: "Fernanda P.", role: "Psicóloga", text: "O design transmitiu muita paz e profissionalismo. Exatamente o que eu buscava.", avatar: "https://i.pravatar.cc/150?u=fernanda" }
               ].map((fb, i) => (
-                <div key={i} className="bg-gray-50 border border-gray-100 p-8 rounded-xl w-80 md:w-96 shrink-0 shadow-sm">
-                  <div className="flex text-yellow-400 mb-4">
-                    {"★★★★★"}
-                  </div>
-                  <p className="text-gray-700 italic mb-6">"{fb.text}"</p>
+                <div key={i} className="bg-gray-50 border border-gray-100 p-8 rounded-xl w-80 md:w-96 shrink-0 shadow-sm flex flex-col justify-between">
                   <div>
-                    <p className="font-bold text-gray-900">{fb.name}</p>
-                    <p className="text-sm text-gray-500">{fb.role}</p>
+                    <div className="flex text-yellow-400 mb-4">
+                      {"★★★★★"}
+                    </div>
+                    <p className="text-gray-700 italic mb-6">"{fb.text}"</p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <img src={fb.avatar} alt={fb.name} className="w-12 h-12 rounded-full border-2 border-blue-100 object-cover" />
+                    <div>
+                      <p className="font-bold text-gray-900">{fb.name}</p>
+                      <p className="text-sm text-gray-500">{fb.role}</p>
+                    </div>
                   </div>
                 </div>
               ))}
-              {/* Duplicar para criar o loop infinito invisível */}
+              {/* Duplicar para criar o loop infinito sem quebrar a tela */}
               {[
-                { name: "Lucas M.", role: "Dono de Hamburgueria", text: "O sistema de delivery mudou meu faturamento. Em 5 dias o site estava no ar e lindo!" },
-                { name: "Mariana S.", role: "Arquiteta", text: "Meu portfólio ficou extremamente elegante e super rápido no celular. Suporte nota 10." },
-                { name: "Pedro A.", role: "CEO Agência M.", text: "Impressionante a agilidade no atendimento pelo chat exclusivo. Achei muito seguro." },
-                { name: "Juliana T.", role: "Dentista", text: "Meus pacientes elogiam muito a facilidade de agendar consulta pelo novo site. Recomendo!" },
-                { name: "Roberto C.", role: "E-commerce de Roupas", text: "As vendas triplicaram. Design limpo, focado em conversão e muito fácil de navegar." },
-                { name: "Camila F.", role: "Advogada", text: "O site passou muita credibilidade para o meu escritório. Serviço impecável." }
+                { name: "Lucas M.", role: "Dono de Hamburgueria", text: "O sistema de delivery mudou meu faturamento. Em 5 dias o site estava no ar e lindo!", avatar: "https://i.pravatar.cc/150?u=lucas" },
+                { name: "Mariana S.", role: "Arquiteta", text: "Meu portfólio ficou extremamente elegante e super rápido no celular. Suporte nota 10.", avatar: "https://i.pravatar.cc/150?u=mariana" },
+                { name: "Pedro A.", role: "CEO Agência M.", text: "Impressionante a agilidade no atendimento pelo chat exclusivo. Achei muito seguro.", avatar: "https://i.pravatar.cc/150?u=pedro" },
+                { name: "Juliana T.", role: "Dentista", text: "Meus pacientes elogiam muito a facilidade de agendar consulta pelo novo site. Recomendo!", avatar: "https://i.pravatar.cc/150?u=juliana" },
+                { name: "Roberto C.", role: "E-commerce de Roupas", text: "As vendas triplicaram. Design limpo, focado em conversão e muito fácil de navegar.", avatar: "https://i.pravatar.cc/150?u=roberto" },
+                { name: "Camila F.", role: "Advogada", text: "O site passou muita credibilidade para o meu escritório. Serviço impecável.", avatar: "https://i.pravatar.cc/150?u=camila" },
+                { name: "Thiago G.", role: "Personal Trainer", text: "Consegui lotar minha agenda! O site capta clientes automaticamente todos os dias.", avatar: "https://i.pravatar.cc/150?u=thiago" },
+                { name: "Amanda L.", role: "Dona de Salão", text: "Perfeito! A galera ama poder ver os serviços e marcar horário pelo próprio site.", avatar: "https://i.pravatar.cc/150?u=amanda" },
+                { name: "Ricardo N.", role: "Corretor de Imóveis", text: "Achei incrível o catálogo de imóveis. Fechei duas vendas no primeiro mês graças ao site.", avatar: "https://i.pravatar.cc/150?u=ricardo" },
+                { name: "Fernanda P.", role: "Psicóloga", text: "O design transmitiu muita paz e profissionalismo. Exatamente o que eu buscava.", avatar: "https://i.pravatar.cc/150?u=fernanda" }
               ].map((fb, i) => (
-                <div key={i + 10} className="bg-gray-50 border border-gray-100 p-8 rounded-xl w-80 md:w-96 shrink-0 shadow-sm">
-                  <div className="flex text-yellow-400 mb-4">
-                    {"★★★★★"}
-                  </div>
-                  <p className="text-gray-700 italic mb-6">"{fb.text}"</p>
+                <div key={i + 20} className="bg-gray-50 border border-gray-100 p-8 rounded-xl w-80 md:w-96 shrink-0 shadow-sm flex flex-col justify-between">
                   <div>
-                    <p className="font-bold text-gray-900">{fb.name}</p>
-                    <p className="text-sm text-gray-500">{fb.role}</p>
+                    <div className="flex text-yellow-400 mb-4">
+                      {"★★★★★"}
+                    </div>
+                    <p className="text-gray-700 italic mb-6">"{fb.text}"</p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <img src={fb.avatar} alt={fb.name} className="w-12 h-12 rounded-full border-2 border-blue-100 object-cover" />
+                    <div>
+                      <p className="font-bold text-gray-900">{fb.name}</p>
+                      <p className="text-sm text-gray-500">{fb.role}</p>
+                    </div>
                   </div>
                 </div>
               ))}
