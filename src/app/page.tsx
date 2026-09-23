@@ -115,16 +115,16 @@ export default function Home() {
           <div className="relative flex w-full gap-6 overflow-hidden">
             <div className="flex w-max animate-[scroll_50s_linear_infinite] hover:[animation-play-state:paused] gap-6 px-4">
               {[
-                { name: "Lucas M.", role: "Dono de Hamburgueria", text: "O sistema de delivery mudou meu faturamento. Em 5 dias o site estava no ar e lindo!", avatar: "https://i.pravatar.cc/150?u=lucas" },
-                { name: "Mariana S.", role: "Arquiteta", text: "Meu portfólio ficou extremamente elegante e super rápido no celular. Suporte nota 10.", avatar: "https://i.pravatar.cc/150?u=mariana" },
-                { name: "Pedro A.", role: "CEO Agência M.", text: "Impressionante a agilidade no atendimento pelo chat exclusivo. Achei muito seguro.", avatar: "https://i.pravatar.cc/150?u=pedro" },
-                { name: "Juliana T.", role: "Dentista", text: "Meus pacientes elogiam muito a facilidade de agendar consulta pelo novo site. Recomendo!", avatar: "https://i.pravatar.cc/150?u=juliana" },
-                { name: "Roberto C.", role: "E-commerce de Roupas", text: "As vendas triplicaram. Design limpo, focado em conversão e muito fácil de navegar.", avatar: "https://i.pravatar.cc/150?u=roberto" },
-                { name: "Camila F.", role: "Advogada", text: "O site passou muita credibilidade para o meu escritório. Serviço impecável.", avatar: "https://i.pravatar.cc/150?u=camila" },
-                { name: "Thiago G.", role: "Personal Trainer", text: "Consegui lotar minha agenda! O site capta clientes automaticamente todos os dias.", avatar: "https://i.pravatar.cc/150?u=thiago" },
-                { name: "Amanda L.", role: "Dona de Salão", text: "Perfeito! A galera ama poder ver os serviços e marcar horário pelo próprio site.", avatar: "https://i.pravatar.cc/150?u=amanda" },
-                { name: "Ricardo N.", role: "Corretor de Imóveis", text: "Achei incrível o catálogo de imóveis. Fechei duas vendas no primeiro mês graças ao site.", avatar: "https://i.pravatar.cc/150?u=ricardo" },
-                { name: "Fernanda P.", role: "Psicóloga", text: "O design transmitiu muita paz e profissionalismo. Exatamente o que eu buscava.", avatar: "https://i.pravatar.cc/150?u=fernanda" }
+                { name: "Lucas M.", role: "Dono de Hamburgueria", text: "O site que a NexSite criou para o meu delivery ficou sensacional. Eles entregaram tudo funcionando em apenas 5 dias!", avatar: "https://i.pravatar.cc/150?u=lucas" },
+                { name: "Mariana S.", role: "Arquiteta", text: "Contratei a criação do meu portfólio e o design ficou extremamente elegante. Meus clientes sempre elogiam a beleza do site.", avatar: "https://i.pravatar.cc/150?u=mariana" },
+                { name: "Pedro A.", role: "Empreendedor", text: "Achei incrível o chat exclusivo do painel do cliente. Pude acompanhar a criação da minha landing page em tempo real.", avatar: "https://i.pravatar.cc/150?u=pedro" },
+                { name: "Juliana T.", role: "Dentista", text: "A equipe da NexSite desenvolveu o site do meu consultório do zero. O botão de agendamento no WhatsApp me rendeu muitos pacientes.", avatar: "https://i.pravatar.cc/150?u=juliana" },
+                { name: "Roberto C.", role: "E-commerce de Roupas", text: "Minha loja virtual ficou espetacular e muito rápida. A taxa de conversão das vendas triplicou depois que encomendei o site novo com eles.", avatar: "https://i.pravatar.cc/150?u=roberto" },
+                { name: "Camila F.", role: "Advogada", text: "O site jurídico que criaram para mim passou muita credibilidade. A estrutura otimizada para o Google fez meu escritório aparecer nas buscas.", avatar: "https://i.pravatar.cc/150?u=camila" },
+                { name: "Thiago G.", role: "Personal Trainer", text: "Comprei uma página de vendas para minhas consultorias e o resultado superou as expectativas. Design de altíssimo nível.", avatar: "https://i.pravatar.cc/150?u=thiago" },
+                { name: "Amanda L.", role: "Dona de Salão", text: "Eles entenderam a identidade da minha marca de primeira. O site institucional do salão ficou pronto muito antes do prazo.", avatar: "https://i.pravatar.cc/150?u=amanda" },
+                { name: "Ricardo N.", role: "Corretor de Imóveis", text: "A plataforma de catálogo de imóveis que eles desenvolveram para mim é perfeita. Muito fácil de eu mesmo adicionar novas casas para vender.", avatar: "https://i.pravatar.cc/150?u=ricardo" },
+                { name: "Fernanda P.", role: "Psicóloga", text: "Ter meu próprio site sempre foi um sonho, e a NexSite tornou isso fácil e acessível. Design moderno e atendimento VIP.", avatar: "https://i.pravatar.cc/150?u=fernanda" }
               ].map((fb, i) => (
                 <div key={i} className="bg-gray-50 border border-gray-100 p-8 rounded-xl w-80 md:w-96 shrink-0 shadow-sm flex flex-col justify-between">
                   <div>
@@ -144,16 +144,16 @@ export default function Home() {
               ))}
               {/* Duplicar para criar o loop infinito sem quebrar a tela */}
               {[
-                { name: "Lucas M.", role: "Dono de Hamburgueria", text: "O sistema de delivery mudou meu faturamento. Em 5 dias o site estava no ar e lindo!", avatar: "https://i.pravatar.cc/150?u=lucas" },
-                { name: "Mariana S.", role: "Arquiteta", text: "Meu portfólio ficou extremamente elegante e super rápido no celular. Suporte nota 10.", avatar: "https://i.pravatar.cc/150?u=mariana" },
-                { name: "Pedro A.", role: "CEO Agência M.", text: "Impressionante a agilidade no atendimento pelo chat exclusivo. Achei muito seguro.", avatar: "https://i.pravatar.cc/150?u=pedro" },
-                { name: "Juliana T.", role: "Dentista", text: "Meus pacientes elogiam muito a facilidade de agendar consulta pelo novo site. Recomendo!", avatar: "https://i.pravatar.cc/150?u=juliana" },
-                { name: "Roberto C.", role: "E-commerce de Roupas", text: "As vendas triplicaram. Design limpo, focado em conversão e muito fácil de navegar.", avatar: "https://i.pravatar.cc/150?u=roberto" },
-                { name: "Camila F.", role: "Advogada", text: "O site passou muita credibilidade para o meu escritório. Serviço impecável.", avatar: "https://i.pravatar.cc/150?u=camila" },
-                { name: "Thiago G.", role: "Personal Trainer", text: "Consegui lotar minha agenda! O site capta clientes automaticamente todos os dias.", avatar: "https://i.pravatar.cc/150?u=thiago" },
-                { name: "Amanda L.", role: "Dona de Salão", text: "Perfeito! A galera ama poder ver os serviços e marcar horário pelo próprio site.", avatar: "https://i.pravatar.cc/150?u=amanda" },
-                { name: "Ricardo N.", role: "Corretor de Imóveis", text: "Achei incrível o catálogo de imóveis. Fechei duas vendas no primeiro mês graças ao site.", avatar: "https://i.pravatar.cc/150?u=ricardo" },
-                { name: "Fernanda P.", role: "Psicóloga", text: "O design transmitiu muita paz e profissionalismo. Exatamente o que eu buscava.", avatar: "https://i.pravatar.cc/150?u=fernanda" }
+                { name: "Lucas M.", role: "Dono de Hamburgueria", text: "O site que a NexSite criou para o meu delivery ficou sensacional. Eles entregaram tudo funcionando em apenas 5 dias!", avatar: "https://i.pravatar.cc/150?u=lucas" },
+                { name: "Mariana S.", role: "Arquiteta", text: "Contratei a criação do meu portfólio e o design ficou extremamente elegante. Meus clientes sempre elogiam a beleza do site.", avatar: "https://i.pravatar.cc/150?u=mariana" },
+                { name: "Pedro A.", role: "Empreendedor", text: "Achei incrível o chat exclusivo do painel do cliente. Pude acompanhar a criação da minha landing page em tempo real.", avatar: "https://i.pravatar.cc/150?u=pedro" },
+                { name: "Juliana T.", role: "Dentista", text: "A equipe da NexSite desenvolveu o site do meu consultório do zero. O botão de agendamento no WhatsApp me rendeu muitos pacientes.", avatar: "https://i.pravatar.cc/150?u=juliana" },
+                { name: "Roberto C.", role: "E-commerce de Roupas", text: "Minha loja virtual ficou espetacular e muito rápida. A taxa de conversão das vendas triplicou depois que encomendei o site novo com eles.", avatar: "https://i.pravatar.cc/150?u=roberto" },
+                { name: "Camila F.", role: "Advogada", text: "O site jurídico que criaram para mim passou muita credibilidade. A estrutura otimizada para o Google fez meu escritório aparecer nas buscas.", avatar: "https://i.pravatar.cc/150?u=camila" },
+                { name: "Thiago G.", role: "Personal Trainer", text: "Comprei uma página de vendas para minhas consultorias e o resultado superou as expectativas. Design de altíssimo nível.", avatar: "https://i.pravatar.cc/150?u=thiago" },
+                { name: "Amanda L.", role: "Dona de Salão", text: "Eles entenderam a identidade da minha marca de primeira. O site institucional do salão ficou pronto muito antes do prazo.", avatar: "https://i.pravatar.cc/150?u=amanda" },
+                { name: "Ricardo N.", role: "Corretor de Imóveis", text: "A plataforma de catálogo de imóveis que eles desenvolveram para mim é perfeita. Muito fácil de eu mesmo adicionar novas casas para vender.", avatar: "https://i.pravatar.cc/150?u=ricardo" },
+                { name: "Fernanda P.", role: "Psicóloga", text: "Ter meu próprio site sempre foi um sonho, e a NexSite tornou isso fácil e acessível. Design moderno e atendimento VIP.", avatar: "https://i.pravatar.cc/150?u=fernanda" }
               ].map((fb, i) => (
                 <div key={i + 20} className="bg-gray-50 border border-gray-100 p-8 rounded-xl w-80 md:w-96 shrink-0 shadow-sm flex flex-col justify-between">
                   <div>
