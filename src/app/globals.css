@@ -24,3 +24,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Forçar o sumiço do badge do Netlify */
+netlify-drawer,
+#netlify-drawer,
+.netlify-drawer,
+iframe[title*="Netlify"],
+iframe[src*="netlify"],
+a[href*="netlify.com"] img[src*="netlify.com"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}
