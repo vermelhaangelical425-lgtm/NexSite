@@ -105,6 +105,62 @@ export default function Home() {
           </div>
         </section>
         
+        {/* Depoimentos / Feedback - Scrolling Slider */}
+        <section className="py-20 bg-white overflow-hidden relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h2 className="text-3xl font-extrabold text-gray-900">O que nossos clientes dizem</h2>
+            <p className="mt-4 text-lg text-gray-500">Resultados reais de quem confiou na NexSite.</p>
+          </div>
+          
+          <div className="relative flex w-full gap-6 overflow-hidden">
+            <div className="flex w-max animate-[scroll_40s_linear_infinite] hover:[animation-play-state:paused] gap-6 px-4">
+              {[
+                { name: "Lucas M.", role: "Dono de Hamburgueria", text: "O sistema de delivery mudou meu faturamento. Em 5 dias o site estava no ar e lindo!" },
+                { name: "Mariana S.", role: "Arquiteta", text: "Meu portfólio ficou extremamente elegante e super rápido no celular. Suporte nota 10." },
+                { name: "Pedro A.", role: "CEO Agência M.", text: "Impressionante a agilidade no atendimento pelo chat exclusivo. Achei muito seguro." },
+                { name: "Juliana T.", role: "Dentista", text: "Meus pacientes elogiam muito a facilidade de agendar consulta pelo novo site. Recomendo!" },
+                { name: "Roberto C.", role: "E-commerce de Roupas", text: "As vendas triplicaram. Design limpo, focado em conversão e muito fácil de navegar." },
+                { name: "Camila F.", role: "Advogada", text: "O site passou muita credibilidade para o meu escritório. Serviço impecável." }
+              ].map((fb, i) => (
+                <div key={i} className="bg-gray-50 border border-gray-100 p-8 rounded-xl w-80 md:w-96 shrink-0 shadow-sm">
+                  <div className="flex text-yellow-400 mb-4">
+                    {"★★★★★"}
+                  </div>
+                  <p className="text-gray-700 italic mb-6">"{fb.text}"</p>
+                  <div>
+                    <p className="font-bold text-gray-900">{fb.name}</p>
+                    <p className="text-sm text-gray-500">{fb.role}</p>
+                  </div>
+                </div>
+              ))}
+              {/* Duplicar para criar o loop infinito invisível */}
+              {[
+                { name: "Lucas M.", role: "Dono de Hamburgueria", text: "O sistema de delivery mudou meu faturamento. Em 5 dias o site estava no ar e lindo!" },
+                { name: "Mariana S.", role: "Arquiteta", text: "Meu portfólio ficou extremamente elegante e super rápido no celular. Suporte nota 10." },
+                { name: "Pedro A.", role: "CEO Agência M.", text: "Impressionante a agilidade no atendimento pelo chat exclusivo. Achei muito seguro." },
+                { name: "Juliana T.", role: "Dentista", text: "Meus pacientes elogiam muito a facilidade de agendar consulta pelo novo site. Recomendo!" },
+                { name: "Roberto C.", role: "E-commerce de Roupas", text: "As vendas triplicaram. Design limpo, focado em conversão e muito fácil de navegar." },
+                { name: "Camila F.", role: "Advogada", text: "O site passou muita credibilidade para o meu escritório. Serviço impecável." }
+              ].map((fb, i) => (
+                <div key={i + 10} className="bg-gray-50 border border-gray-100 p-8 rounded-xl w-80 md:w-96 shrink-0 shadow-sm">
+                  <div className="flex text-yellow-400 mb-4">
+                    {"★★★★★"}
+                  </div>
+                  <p className="text-gray-700 italic mb-6">"{fb.text}"</p>
+                  <div>
+                    <p className="font-bold text-gray-900">{fb.name}</p>
+                    <p className="text-sm text-gray-500">{fb.role}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            {/* Sombras laterais para dar efeito de fade */}
+            <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+            <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
+          </div>
+        </section>
+        
         {/* CTA */}
         <section className="bg-blue-600 py-16">
           <div className="max-w-4xl mx-auto px-4 text-center">
